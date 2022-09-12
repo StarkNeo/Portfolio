@@ -26,3 +26,10 @@ showLess.addEventListener('click',()=>{
 
 
 })
+
+let burger=document.getElementById('burger');
+let menu=document.querySelector('ul');
+
+burger.addEventListener('click',()=>{
+    menu.classList.toggle('menu-hidden');
+});
