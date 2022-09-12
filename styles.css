@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Open+Sans:wght@300;400&display=swap');
+/*font-family: 'Amatic SC', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
+
+body {
+    width: 900px;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header h1 {
+    font-weight: bold;
+    width: 40%;
+    font-size: 2.5rem;
+    opacity: 0.8;
+
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 0;
+    list-style: none;
+    font-weight: 900;
+    cursor: pointer;
+    opacity: 0.9;
+}
+a{
+    text-decoration: none;
+
+}
+a:link{
+    color: black;
+    
+}
+a:visited{
+    color: black;
+}
+
+a:hover, a:focus{
+    font-size: larger;
+    color: black;
+    
+}
+
+#about-me {
+    display: flex;
+}
+
+#about-me p {
+    opacity: 0.8;
+    width: 70%;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+
+}
+
+#about-me span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+#story {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#contact{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#perfil{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url(./images/images.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+    transition: opacity 2s linear 0.3ms,
+    background-image 2s linear 0.3ms;
+}
+#perfil:hover{
+    opacity: 1;
+    background-image: url(./images/fotoperfil2.jpg);
+    
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    height: auto;
+    justify-content: space-between;
+
+}
+
+#projects i{
+    margin-top: 1rem;
+}
+#projects h2 {
+    opacity: 0.9;
+}
+
+#skills {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.lang-icons, .contact-media {
+    width: 50px;
+    
+    
+}
+
+.fa-solid{
+    cursor: pointer;
+}
+.data-project{
+    display: none;
+    flex-direction: column;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: blue;
+    margin-left: 0;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#continue{
+    display: none;
+}
+
+#less{
+    display: none;
+}
+#more{
+    display: flex;
+}
