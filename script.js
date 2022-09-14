@@ -33,3 +33,23 @@ let menu=document.querySelector('ul');
 burger.addEventListener('click',()=>{
     menu.classList.toggle('menu-hidden');
 });
+
+
+
+/*
+cuando de un click en la imagen con clase lang-icons
+verificar su parentNode
+si parentNode es igual a figure
+asignale la clase .figure al parent
+y a su nextSibling cambia el estilo a display flex
+*/
+
+document.addEventListener('click', e =>{
+    let popUp=e.target.parentNode;
+    let caption=e.target.nextElementSibling;
+    if (popUp.localName === 'figure') {
+     popUp.classList.toggle('figure');
+     caption.classList.toggle('figcaption');   
+    }
+    
+})

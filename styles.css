@@ -135,14 +135,58 @@ a:hover, a:focus{
 #skills {
     margin-top: 4rem;
     display: flex;
-    justify-content: space-between;
+   
+    /*justify-content: space-between;*/
     flex-wrap: wrap;
     width: 100%;
 }
 
+
+.figure{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /*border: 2px solid black;*/
+    border-radius: 0.2rem;
+    width: 90%;
+    height: 100%;
+    max-width: 750px;
+    align-items: center;
+    background-color: white;    
+}
+
+figcaption{
+    display: none;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    
+}
+
+.figcaption{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+}
+
+figure img{
+    transition:width 0.5s linear 0.3ms,
+    transform 0.3s ease-in-out 0.3ms;
+    
+
+}
+
+figure img:hover{
+    width: 80px;   
+    transform: translateY(-20px);
+ 
+    
+}
+.bold{
+    font-weight: bold;
+}
 .lang-icons, .contact-media {
     width: 50px;
-    
+    cursor: pointer;
     
 }
 
@@ -206,7 +250,6 @@ button{
         width: 100%;
     }
     #about-me p{
-        background-color: aliceblue;
         width: 90%;
         opacity: 1;
         
