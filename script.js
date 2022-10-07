@@ -32,6 +32,16 @@ let menu=document.querySelector('ul');
 
 burger.addEventListener('click',()=>{
     menu.classList.toggle('menu-hidden');
+    let fig = burger.innerHTML;
+    console.log(fig);
+    if (fig === '☰'){
+        burger.innerHTML = 'x';
+    }
+    else{
+        burger.innerHTML = '☰';
+    }     
+    
+
 });
 
 
