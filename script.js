@@ -1,26 +1,64 @@
+
+//FUNCION PARA AGREGAR PROYECTOS AL ARREGLO projects 
+
+function proyecto(nombre, url, descripcion, lenguaje) {
+    return {
+        nombre: nombre,
+        url_imagen: url,
+        descripcion:descripcion,
+        lenguaje:lenguaje
+    }
+}
+
+const skill =(imagen, descripcion, link, disenador, otroUno, otroDos, otroTres)=>{
+    return {
+        imagen:imagen,
+        descripcion:descripcion,
+        link:link,
+        disenador:disenador,
+        otroUno:otroUno,
+        otroDos:otroDos,
+        otroTres:otroTres
+    }
+}
+
+
 let projects = [
     {
         nombre: 'Podcast Webpage',
-        url_imagen: "./images/podcast.png"
+        url_imagen: "./images/podcast.png",
+        descripcion:'',
+        lenguaje:''
     },
     {
         nombre: 'GIFOS',
-        url_imagen: "./images/gifos.png"
+        url_imagen: "./images/gifos.png",
+        descripcion:'',
+        lenguaje:''
     },
     {
         nombre: 'Costo Patronal',
-        url_imagen: "./images/costopatronal.png"
+        url_imagen: "./images/costopatronal.png",
+        descripcion:'',
+        lenguaje:''
     },
     {
         nombre: 'Calculo Asimilados',
-        url_imagen: "./images/asimilados.png"
+        url_imagen: "./images/asimilados.png",
+        descripcion:'',
+        lenguaje:''
     },
     {
         nombre: 'SuperApp V2',
-        url_imagen: "./images/superapp.png"
+        url_imagen: "./images/superappV2.png",
+        descripcion:'',
+        lenguaje:''
     }
 ]
 
+let skills = [
+
+]
 
 const cargar = (projects) => {
 

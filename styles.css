@@ -153,8 +153,10 @@ span a:link,span a:hover,span a:visited,span a:focus{
     border-right: 3px solid green;
 }
 .proj-img{
+    width: 19rem;
+    height: 19rem;
     max-width: 19rem;
-    max-height: 18.75rem;
+    max-height: 19rem;
 }
 @keyframes moveright{
     from{
@@ -470,4 +472,15 @@ button{
         color: whitesmoke;
     }
     
+    #contact{
+        font-size: 1rem;
+        display: block;
+        
+    }
+    .contact-media{
+        width: 20px;
+        height: 20px;
+        margin-left: 2rem;
+
+    }
 }
