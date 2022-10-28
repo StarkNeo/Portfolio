@@ -78,17 +78,27 @@ const cargar = (projects) => {
     })
 
     let burger = document.getElementById('burger');
-    let menu = document.querySelector('ul');
+    let menu = document.querySelector('#main-nav');
+    let titulo = document.querySelector('#titulo');
+    console.log(titulo);
 
     burger.addEventListener('click', () => {
-        menu.classList.toggle('menu-hidden');
+        
+        
+        
         let fig = burger.innerHTML;
         console.log(fig);
         if (fig === '☰') {
             burger.innerHTML = 'x';
+            titulo.style.display='none';
+            menu.style.display='flex';
+                
         }
         else {
             burger.innerHTML = '☰';
+            titulo.style.display='flex';
+            menu.style.display='none';
+        
         }
 
 
